@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1100" viewBox="0 0 2000 1100">
+  <rect width="100%" height="100%" fill="#070708"/>
+  <!-- Simple tiled game-card placeholders rotated around the canvas to emulate Roblox collage -->
+  <defs>
+    <g id="card">
+      <rect x="0" y="0" width="220" height="140" rx="12" fill="#111214" stroke="#2b2c2f" stroke-width="2" />
+      <rect x="14" y="12" width="80" height="80" rx="8" fill="#3b3f44" />
+      <rect x="104" y="12" width="100" height="80" rx="8" fill="#2d3134" />
+      <rect x="14" y="98" width="190" height="26" rx="6" fill="#1f2022" />
+    </g>
+  </defs>
+
+  <!-- create many instances with varying positions and rotation -->
+  <g fill-opacity="1">
+    <use href="#card" x="120" y="80" transform="rotate(-18 230 150)"/>
+    <use href="#card" x="420" y="40" transform="rotate(12 530 110)"/>
+    <use href="#card" x="720" y="120" transform="rotate(-24 830 190)"/>
+    <use href="#card" x="1000" y="80" transform="rotate(8 1110 150)"/>
+    <use href="#card" x="1360" y="40" transform="rotate(-14 1470 110)"/>
+    <use href="#card" x="160" y="380" transform="rotate(6 270 450)"/>
+    <use href="#card" x="420" y="320" transform="rotate(-20 530 390)"/>
+    <use href="#card" x="760" y="360" transform="rotate(18 870 430)"/>
+    <use href="#card" x="1120" y="320" transform="rotate(-8 1230 390)"/>
+    <use href="#card" x="1480" y="360" transform="rotate(22 1590 430)"/>
+    <use href="#card" x="220" y="700" transform="rotate(-12 330 770)"/>
+    <use href="#card" x="520" y="680" transform="rotate(16 630 750)"/>
+    <use href="#card" x="820" y="740" transform="rotate(-18 930 810)"/>
+    <use href="#card" x="1160" y="700" transform="rotate(10 1270 770)"/>
+    <use href="#card" x="1520" y="740" transform="rotate(-22 1630 810)"/>
+  </g>
+
+  <!-- subtle vignette -->
+  <radialGradient id="v" cx="50%" cy="50%" r="60%">
+    <stop offset="60%" stop-color="#00000000"/>
+    <stop offset="100%" stop-color="#00000088"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#v)"/>
+</svg>

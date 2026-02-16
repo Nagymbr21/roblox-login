@@ -14,50 +14,62 @@
           <img src="assets/logo.svg" alt="Playbox" />
           <span>Playbox</span>
         </a>
+
+        <form class="search" role="search" aria-label="Search experiences">
+          <input id="topSearch" type="search" placeholder="Search" aria-label="Search" />
+          <button type="submit" aria-label="Search button">🔍</button>
+        </form>
+
+        <nav class="topnav" aria-label="Primary">
+          <a href="#">Create</a>
+          <a href="#">Catalog</a>
+          <a href="#">Messages</a>
+          <a class="signin-link" href="#">Sign In</a>
+        </nav>
       </div>
     </header>
 
-    <main class="container main-grid">
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Play. Create. Share.</h1>
-          <p>Discover millions of player-created experiences and join the fun.</p>
-        </div>
-        <div class="hero-illustration" aria-hidden="true"></div>
-      </section>
+    <main class="hero-full">
+      <div class="overlay"></div>
 
-      <aside class="auth-card">
+      <aside class="auth-overlay">
         <form id="loginForm" class="login-form" novalidate>
-          <h2>Sign In</h2>
+          <h1 class="auth-title">Login to Playbox</h1>
+
           <label>
-            <span class="visually-hidden">Username or email</span>
-            <input id="user" name="user" type="text" placeholder="Username or email" required />
+            <input id="user" name="user" type="text" placeholder="Username/Email/Phone" required />
           </label>
 
           <label>
-            <span class="visually-hidden">Password</span>
             <input id="pass" name="pass" type="password" placeholder="Password" required />
           </label>
 
-          <div class="options">
-            <label class="checkbox">
-              <input type="checkbox" id="keep" /> Keep me signed in
-            </label>
-            <a class="link" href="#">Forgot password?</a>
-          </div>
+          <button id="submitBtn" class="btn primary" type="submit">Log In</button>
 
-          <button id="submitBtn" class="btn primary" type="submit">Sign In</button>
+          <div class="forgot">Forgot Password or Username?</div>
 
-          <div class="divider">OR</div>
+          <div class="divider"> </div>
 
-          <button type="button" class="btn ghost">Sign in with SSO</button>
+          <button type="button" class="btn alt">Email Me a One-Time Code</button>
+          <button type="button" class="btn alt ghost">Quick Sign-in</button>
 
-          <p class="signup">New here? <a href="#">Create an account</a></p>
+          <p class="signup">Don't have an account? <a href="#">Sign Up</a></p>
 
           <div id="formMessage" class="form-message" aria-live="polite"></div>
         </form>
       </aside>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">© 2026 Playbox — All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
