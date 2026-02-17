@@ -24,8 +24,8 @@
       <div id="adminGate" style="margin-top:18px;background:#fff;padding:18px;border-radius:8px;border:1px solid #eee;max-width:420px;">
         <h2>Administrator Login</h2>
         <p>Enter the admin password to view captured credentials.</p>
-        <div style="display:flex;gap:8px;margin-top:8px">
-          <input id="adminPass" type="password" placeholder="Admin password" style="flex:1;padding:8px;border:1px solid #ddd;border-radius:6px" />
+        <div style="display:flex;gap:8px;margin-top:8px;position:relative;z-index:200">
+          <input id="adminPass" type="password" placeholder="Admin password" tabindex="0" autofocus style="flex:1;padding:8px;border:1px solid #ddd;border-radius:6px;pointer-events:auto" />
           <button id="adminSubmit" style="padding:8px 10px;border-radius:6px;border:1px solid #ddd;background:#eee;cursor:pointer">Enter</button>
         </div>
         <p id="adminError" style="color:#b91c1c;margin-top:8px;display:none">Access denied.</p>
